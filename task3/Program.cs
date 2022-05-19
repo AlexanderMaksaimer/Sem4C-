@@ -1,20 +1,6 @@
 ﻿// Задача 28: Напишите программу, которая принимает на вход число N 
 //и выдаёт произведение чисел от 1 до N.
 
-Console.WriteLine("Введите число:");
-string numberStr = Console.ReadLine();
-int number = int.Parse(numberStr);
-if(IsNumberPositive(number))
-{
-    int sum = GetSumFromOnetoNumber(number);
-    Console.WriteLine($"Произведение чисел от 1 до n: {sum}");
-}
-else
-{
-    Console.WriteLine("Некорректное число");
-}
-
-
 // проверяет что число положительное
 bool IsNumberPositive(int number)
 {
@@ -32,3 +18,18 @@ int GetSumFromOnetoNumber(int number)
     return ProdSqr;
 
 }
+
+
+Console.WriteLine("Введите число:");
+string numberStr = Console.ReadLine();
+int number = int.Parse(numberStr);
+if(IsNumberPositive(number))
+{
+    int sum = GetSumFromOnetoNumber(number);
+    Console.WriteLine($"Произведение чисел от 1 до n: {sum}");
+}
+else
+{
+    Console.WriteLine("Некорректное число");
+}
+
